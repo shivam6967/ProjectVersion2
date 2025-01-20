@@ -73,7 +73,12 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
-
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  overflow-x: hidden;
+  /* width: 100%; */
+}
 *,
 *::before,
 *::after {
@@ -448,7 +453,9 @@ a {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 30px;
+  margin-left: -20px;
   padding-block: 15px 10px;
   box-shadow: -2px 0 30px hsla(237, 71%, 52%, 0.2);
   z-index: 3;
@@ -1990,8 +1997,8 @@ a {
 .modal-content {
   color: yellow;
   position: relative;
-  max-width: 340px;
-  margin-left: -70px;
+  max-width: 400px;
+  margin-left: -50px;
   background: black;
   -webkit-border-radius: var(--border-radius-md);
   border-radius: var(--border-radius-md);
@@ -2038,7 +2045,6 @@ a {
   position: absolute;
   top: 15px;
   right: 15px;
-  border: 2px solid yellow;
   background: rgb(255, 0, 0);
   color: var(--white);
   font-size: 16px;
@@ -2079,6 +2085,7 @@ a {
 
 .email-field {
   font-size: var(--fs-3);
+  color: white;
   padding: 8px 16px;
   -webkit-border-radius: var(--border-radius-sm);
   border-radius: var(--border-radius-sm);
@@ -2087,13 +2094,18 @@ a {
   background: transparent;
 }
 
+.selectoptn {
+  color: white;
+  font-size: 20px;
+}
+
 .btn-newsletter {
-  background: var(--eerie-black);
-  color: yellow;
+  background: rgb(238, 238, 187);
+  color: black;
   width: 100%;
   text-align: center;
   font-size: var(--fs-7);
-  font-weight: var(--weight-600);
+  font-weight: bold;
   text-transform: uppercase;
   padding: 10px 15px;
   -webkit-border-radius: var(--border-radius-sm);
@@ -2102,10 +2114,6 @@ a {
   -webkit-transition: var(--transition-timing);
   -o-transition: var(--transition-timing);
   transition: var(--transition-timing);
-}
-
-.btn-newsletter:hover {
-  background: rgb(166, 102, 255);
 }
 
 :root {

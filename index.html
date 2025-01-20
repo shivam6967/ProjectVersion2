@@ -35,7 +35,7 @@
     />
   </head>
 
-  <body>
+  <body >
     <!-- This is the modalone Section  -->
 
     <!--
@@ -88,7 +88,7 @@
             <!-- Phone Field -->
             <div class="phone-input" style="display: flex; gap: 10px">
               <select class="selectoptn">
-                <option value="+91">+91</option>
+                <option style="color:white" value="+91">+91</option>
 
                 <!-- Add more country codes here -->
               </select>
@@ -265,9 +265,10 @@
               aria-label="Search"
               onclick="window.location.href='tel:+8555455861'"
             >
-              <i class="fa fa-phone" style="font-size: 35px; color: blue"></i>
+              <i class="fa fa-phone" style="font-size: 25px; color: white; background-color:rgb(45, 34, 0); padding:10px 13px
+              ; border-radius: 50%"></i>
 
-              <span>Call Us</span>
+           
             </button>
 
             <button
@@ -277,10 +278,11 @@
             >
               <i
                 class="fa fa-whatsapp"
-                style="font-size: 35px; color: green"
+                style="font-size: 25px; color: white; background-color:rgb(45, 34, 0); padding:10px 13px
+              ; border-radius: 50%"
               ></i>
 
-              <span>Whatsapp</span>
+         
             </button>
 
             <button
@@ -288,10 +290,11 @@
               aria-label="Cart"
               onclick="modalOpenFunc()"
             >
-              <i class="fa fa-search" style="font-size: 35px; color: rgb(255, 67, 74)">
+              <i class="fa fa-search" style="font-size: 25px; color: white; background-color:rgb(45, 34, 0); padding:10px 13px
+              ; border-radius: 50%">
               </i>
 
-              <span>Enquire Now</span>
+            
             </button>
 
             <button
@@ -299,9 +302,10 @@
               data-nav-open-btn
               aria-label="Open Menu"
             >
-              <i class="fa fa-bars" style="font-size: 35px; color: rgb(45, 34, 0)"> </i>
+              <i class="fa fa-bars" style="font-size: 25px; color: white; background-color:rgb(45, 34, 0); padding:10px 13px
+              ; border-radius: 50%"> </i>
 
-              <span>Menu</span>
+            
             </button>
           </div>
         </div>
@@ -480,7 +484,7 @@ For Every Lifestyle
                         <a href="#" class="card-meta-link">
                           <ion-icon name="pricetags"></ion-icon>
 
-                          <span>Rooftop Swimming Pool</span>
+                          <span>Swimming Pool</span>
                         </a>
                       </li>
                     </ul>
@@ -1234,82 +1238,103 @@ For Every Lifestyle
     - #FOOTER
   -->
 
- <div class="modalone" data-modalone>
-      <div class="modalone-content">
+  <div class="modalone" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div style="margin-left: 0px;" class="modal-content">
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter">
        
-        <div class="newsletter">
-          <h2 class="keepin">Keep in Touch</h2>
-          <!-- Form Section -->
-          <form action="#" class="modalone-form">
-            <!-- Name Field -->
-            <div class="phone-input" style="display: flex; gap: 10px">
-              <input
+        <h2 style="margin-bottom: 10px; font-size:30px;">Contact Us</h2>
+        <!-- Form Section -->
+        <form action="#" class="modal-form">
+          <!-- Name Field -->
+          <div class="phone-input" style="display: flex; gap: 10px; color: yellow">
+            <input
+              type="text"
+              name="name"
+              class="email-field"
+              placeholder="Enter Name"
+              required
+              style="flex: 1"
+            />
+          </div>
 
-                type="text"
-                name="name"
-                class="email-field phoneinTwo"
-                placeholder="Enter Name"
-                required
-                style="flex: 1"
-                
-              />
-            </div>
+          <!-- Email Field -->
+          <div class="phone-input" style="display: flex; gap: 10px; color: yellow">
+            <input
+              type="email"
+              name="email"
+              class="email-field"
+              placeholder="Enter Email"
+              required
+              style="flex: 1"
+            />
+          </div>
 
-            <!-- Email Field -->
-            <div class="phone-input" style="display: flex; gap: 10px">
-              <input
-                type="email"
-                name="email"
-                class="email-field"
-                placeholder="Enter Email"
-                required
-                style="flex: 1"
-              />
-            </div>
+          <!-- Phone Field -->
+          <div class="phone-input" style="display: flex; gap: 10px">
+            <select class="selectoptn">
+              <option style="color:white" value="+91">+91</option>
 
-            <!-- Phone Field -->
-            <div class="phone-input" style="display: flex; gap: 10px">
-              <select class="email-field" style="width: 30%; max-width: 100px">
-                <option value="+91">IN +91</option>
+              <!-- Add more country codes here -->
+            </select>
 
-                <!-- Add more country codes here -->
-              </select>
+            <input
+              type="tel"
+              name="phone"
+              class="email-field numbersec"
+              placeholder="Enter Number"
+              required
+              style="flex: 1"
+            />
+          </div>
 
-              <input
-              
-                type="tel"
-                name="phone"
-                class="email-field"
-                placeholder="Enter Number"
-                required
-                style="flex: 1"
-              />
-            </div>
+          
+           <div class="phone-input" style="display: flex; gap: 10px; color: yellow">
+            <input
+              type="text"
+              name="text"
+              class="email-field"
+              placeholder="Enter Your Message"
+              required
+              style="flex: 1"
+            />
+          </div>
 
-           
-            <div class="phone-input" style="display: flex; gap: 10px">
-              <textarea
-              
-                name="message"
-                class="email-field"
-                placeholder="Enter Message"
-                rows="1"
-                style="resize: none; padding: 8px 16px"
-                required
-                style="flex: 1"
-              ></textarea>
-            </div> 
+          <!-- Submit Button -->
 
-            <!-- Submit Button -->
+          <button type="submit" class="btn-newsletter">Submit Now</button>
 
-            <button type="submit" class="btn-newsletter">Submit Now</button>
-
-            <!-- Consent Section -->
-            
-          </form>
-        </div>
+          <!-- Consent Section -->
+          <!-- <div class="consent" style="text-align: left; margin-top: 10px">
+            <input
+              type="checkbox"
+              name="consent"
+              id="consent"
+              style="margin-right: 8px"
+              required
+            />
+            <label
+              for="consent"
+              style="
+                font-size: 10px;
+                color: var(--sonic-silver);
+                line-height: 1.5;
+              "
+            >
+              I authorize company representatives to Call, SMS, Email or
+              WhatsApp me about its products and offers. This consent
+              overrides any registration for DNC/NDNC.
+            </label>
+          </div> -->
+        </form>
       </div>
     </div>
+  </div>
 
     <footer class="footer">
       <div class="footer-top">
