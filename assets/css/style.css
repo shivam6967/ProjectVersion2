@@ -79,7 +79,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
 }
 
@@ -1990,8 +1990,8 @@ a {
 .modal-content {
   color: yellow;
   position: relative;
-  max-width: 550px;
-  margin: 20px;
+  max-width: 340px;
+  margin-left: -70px;
   background: black;
   -webkit-border-radius: var(--border-radius-md);
   border-radius: var(--border-radius-md);
@@ -1999,6 +1999,17 @@ a {
   z-index: 2;
   -webkit-animation: scaleUp 0.5s ease-in-out 5s forwards;
   animation: scaleUp 0.5s ease-in-out 5s forwards;
+}
+
+.numbersec {
+  width: 150px;
+}
+
+.selectoptn {
+  border: 1px solid yellow;
+  background: transparent;
+  border-radius: 5px;
+  height: 40px;
 }
 
 @-webkit-keyframes scaleUp {
