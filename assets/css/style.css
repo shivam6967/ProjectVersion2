@@ -10,6 +10,11 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+html,
+body {
+  background-color: color;
+}
+
 :root {
   /**
    * colors
